@@ -7,7 +7,7 @@ from b2sdk.v2 import InMemoryAccountInfo, B2Api
 APPLICATION_KEY_ID = os.environ["APPLICATION_KEY_ID"]
 APPLICATION_KEY = os.environ["APPLICATION_KEY"]
 BUCKET_NAME = os.environ["BUCKET_NAME"]
-SOURCE_DIR = os.environ["SOURCE_DIR"]
+SOURCE_DIR = "./data"
 
 
 
@@ -34,5 +34,5 @@ def backup_directory(source: str):
             upload_file(local_file, remote_file)
 
 if __name__ == "__main__":
-    print("Hello World")
-    # backup_directory(SOURCE_DIR)
+    print("Starting backup...")
+    backup_directory(SOURCE_DIR)
