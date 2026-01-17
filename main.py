@@ -7,7 +7,7 @@ from b2sdk.v2 import InMemoryAccountInfo, B2Api
 APPLICATION_KEY_ID = os.environ["APPLICATION_KEY_ID"]
 APPLICATION_KEY = os.environ["APPLICATION_KEY"]
 BUCKET_NAME = os.environ["BUCKET_NAME"]
-SOURCE_DIR = "./data"
+SOURCE_DIR = os.environ["SOURCE_DIR"]
 
 
 
@@ -27,6 +27,9 @@ def backup_directory(source: str):
     base_path = Path(source).resolve()
     for root, _, files in os.walk(base_path):
         for filename in files:
+            if datetime.today().weekday() != 0 and '/images' in root:
+                print("Skipping images backup, not Monday")
+                continue
             local_file = Path(root) / filename
             relative_path = local_file.relative_to(base_path)
             remote_file = f"{backup_prefix}/{str(relative_path)}"
