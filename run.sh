@@ -1,1 +1,1 @@
-uv run --env-file .env main.py
+uv run --env-file .env run.py

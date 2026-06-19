@@ -1,0 +1,16 @@
+# Backblaze B2 backup jobs.
+# Each job needs: name, type ("snapshot" or "sync"), source, dest_prefix.
+#   snapshot -> uploads a single file under a timestamped folder (keeps history)
+#   sync     -> mirrors a directory to the bucket
+
+[[jobs]]
+name = "documents-snapshot"
+type = "snapshot"
+source = "/Users/bjarnthoregilsson/Projects/backblaze-sync/images/file.txt"
+dest_prefix = "file"
+
+[[jobs]]
+name = "photos-sync"
+type = "sync"
+source = "/Users/bjarnthoregilsson/Projects/backblaze-sync/images"
+dest_prefix = "photos"

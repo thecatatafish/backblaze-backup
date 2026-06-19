@@ -35,7 +35,7 @@ wheels = [
 
 [[package]]
 name = "b2"
-version = "4.4.2"
+version = "4.7.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "argcomplete" },
@@ -43,20 +43,19 @@ dependencies = [
     { name = "b2sdk" },
     { name = "docutils" },
     { name = "idna", marker = "platform_system == 'Java'" },
-    { name = "phx-class-registry" },
     { name = "platformdirs" },
     { name = "rst2ansi" },
     { name = "tabulate" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e8/be/5787c4a1ab6d996e6740904fc8bfcf9b39de5cafc2aae0b8d84a997d26e2/b2-4.4.2.tar.gz", hash = "sha256:61ac927da23e5c69bbc87b217b21cec442c809f890bc07e2dcc9f66a75e2d60b", size = 95178, upload-time = "2025-09-09T20:10:19.467Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c9/81/d53f7f6826032f4a0e2e360de105d62b0be0a1a2ec6b69b7f7329caf7b0e/b2-4.7.1.tar.gz", hash = "sha256:a6e571d01f559cd6baca822bcec17aba7326c9c878f34439fb590b717a1c6d60", size = 70689, upload-time = "2026-06-08T15:19:30.095Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/81/08/5f24f2f9095b1b331eddf46e1b9be5b7d3a7e0327da2782e58ae279de686/b2-4.4.2-py3-none-any.whl", hash = "sha256:9ab42a1b045f29921eae59e2ca7c46cdb8e9f4ccffb50e80b3d3bf21dd923b83", size = 104268, upload-time = "2025-09-09T20:10:18.387Z" },
+    { url = "https://files.pythonhosted.org/packages/d3/d5/559ef095c4e59caa035542b47b13141aaefb75f9bdf6fd107bb8c534c4ed/b2-4.7.1-py3-none-any.whl", hash = "sha256:51e6bc17bfe44192fe96b78cb5cbdb61f1312445464532bcdd1578103bd75e89", size = 82624, upload-time = "2026-06-08T15:19:28.418Z" },
 ]
 
 [[package]]
 name = "b2sdk"
-version = "2.10.0"
+version = "2.12.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "annotated-types" },
@@ -64,9 +63,9 @@ dependencies = [
     { name = "requests" },
     { name = "typing-extensions", marker = "python_full_version < '3.12'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/3b/ed/41cf8eb982f737b5f591a01446dd78db79269a24bc71142eb74fcf42c039/b2sdk-2.10.0.tar.gz", hash = "sha256:be41a07a49ed332129cf3d73262308774187b230862731e473485400a89f8dc3", size = 214259, upload-time = "2025-08-17T23:50:40.173Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/41/d8/45bc23014df0d263d2bda904bcb993f3771f7b2dbd40f06fdcbe910271ac/b2sdk-2.12.0.tar.gz", hash = "sha256:da7b65e1af4f59c7de7d079c1e25de6b033aa45090fded4caefe52ded9b13ee6", size = 209696, upload-time = "2026-05-05T15:42:16.04Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/eb/06/ebe02bbb6ba8c7534fed07d184260bc028ca3689c48f9cdda41c0e915b0f/b2sdk-2.10.0-py3-none-any.whl", hash = "sha256:5bb587830a840b60ed148765b29870d251c6d02408712c5c3447725a1414d52d", size = 298854, upload-time = "2025-08-17T23:50:38.742Z" },
+    { url = "https://files.pythonhosted.org/packages/aa/06/ba5d1fa6170651197fe1eed9d70884517f4df6f264a4647f23e61bb21b46/b2sdk-2.12.0-py3-none-any.whl", hash = "sha256:58af4e925b2ed0422b4f2f26ee3f53c7045520ae6ddcbe65b5bc9e4b99725bce", size = 300909, upload-time = "2026-05-05T15:42:14.574Z" },
 ]
 
 [[package]]
@@ -78,7 +77,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "b2", specifier = ">=4.4.2" }]
+requires-dist = [{ name = "b2", specifier = ">=4.7.1" }]
 
 [[package]]
 name = "certifi"
@@ -179,15 +178,6 @@ wheels = [
 ]
 
 [[package]]
-name = "phx-class-registry"
-version = "4.1.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/79/ce/db26f7f8ed4f4b200f34b8401ecaa9cbb0709f3c3822ae0d29a6019ad2a8/phx-class-registry-4.1.0.tar.gz", hash = "sha256:6a7fe8568f9000ad1f90c9a81c5cb65ec20ee3b89b2aaab7a67e14dbb67e11d1", size = 21462, upload-time = "2023-10-06T01:27:31.951Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/9b/46/02f4f5fb40f5ccbb3fc23a328fb3314843375d050a3b40ec21a8c18b5762/phx_class_registry-4.1.0-py3-none-any.whl", hash = "sha256:1cad15897473d5bcd2ed7640423e68b7fa20745e4e25c0457f5474afa50bc8bb", size = 13829, upload-time = "2023-10-06T01:27:30.039Z" },
-]
-
-[[package]]
 name = "platformdirs"
 version = "4.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -210,7 +200,7 @@ wheels = [
 
 [[package]]
 name = "requests"
-version = "2.32.5"
+version = "2.34.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "certifi" },
@@ -218,9 +208,9 @@ dependencies = [
     { name = "idna" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c9/74/b3ff8e6c8446842c3f5c837e9c3dfcfe2018ea6ecef224c710c85ef728f4/requests-2.32.5.tar.gz", hash = "sha256:dbba0bac56e100853db0ea71b82b4dfd5fe2bf6d3754a8893c3af500cec7d7cf", size = 134517, upload-time = "2025-08-18T20:46:02.573Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ac/c3/e2a2b89f2d3e2179abd6d00ebd70bff6273f37fb3e0cc209f48b39d00cbf/requests-2.34.2.tar.gz", hash = "sha256:f288924cae4e29463698d6d60bc6a4da69c89185ad1e0bcc4104f584e960b9ed", size = 142856, upload-time = "2026-05-14T19:25:27.735Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl", hash = "sha256:2462f94637a34fd532264295e186976db0f5d453d1cdd31473c85a6a161affb6", size = 64738, upload-time = "2025-08-18T20:46:00.542Z" },
+    { url = "https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl", hash = "sha256:2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0", size = 73075, upload-time = "2026-05-14T19:25:26.443Z" },
 ]
 
 [[package]]
