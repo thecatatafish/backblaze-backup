@@ -4,13 +4,31 @@
 #   sync     -> mirrors a directory to the bucket
 
 [[jobs]]
-name = "documents-snapshot"
+name = "wodpost-db"
 type = "snapshot"
-source = "/Users/bjarnthoregilsson/Projects/backblaze-sync/images/file.txt"
-dest_prefix = "file"
+source = "/opt/wodpost/database.db"
+dest_prefix = "wodpost-db"
 
 [[jobs]]
-name = "photos-sync"
+name = "wodpost-images"
 type = "sync"
-source = "/Users/bjarnthoregilsson/Projects/backblaze-sync/images"
-dest_prefix = "photos"
+source = "/opt/wodpost/images/"
+dest_prefix = "wodpost-images"
+
+[[jobs]]
+name = "locations-db"
+type = "snapshot"
+source = "/opt/locations/database.db"
+dest_prefix = "locations-db"
+
+[[jobs]]
+name = "planner-db"
+type = "snapshot"
+source = "/opt/home-planner/planner.db"
+dest_prefix = "planner-db"
+
+#[[jobs]]
+#name = "planner-images"
+#type = "sync"
+#source = ""
+#dest_prefix = "planner-images"
