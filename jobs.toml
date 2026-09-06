@@ -27,6 +27,12 @@ type = "snapshot"
 source = "/opt/home-planner/planner.db"
 dest_prefix = "planner-db"
 
+[[jobs]]
+name = "trmnl"
+type = "sync"
+source = "/opt/trmnl/"
+dest_prefix = "trmnl"
+
 #[[jobs]]
 #name = "planner-images"
 #type = "sync"
